@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FinalApp</string>
+    <string name="translate_text">Translate Text</string>
+    <string name="rtn">Return</string>
+    <string name="text_recognition">Text Recognition</string>
+    <string name="text_translation">Text Translation</string>
+    <string name="take_photo">Take A Photo</string>
+</resources>
