@@ -18,6 +18,11 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(this, ReadTextActivity::class.java)
                 startActivity(intent)
             }
+            R.id.buttonTranslateText -> {
+                // open translate text activity
+                val intent = Intent(this, TranslateTextActivity::class.java)
+                startActivity(intent)
+            }
         }
     }
 }

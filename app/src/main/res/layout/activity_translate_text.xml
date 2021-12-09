@@ -6,4 +6,87 @@
     android:layout_height="match_parent"
     tools:context=".TranslateTextActivity">
 
+    <TextView
+        android:id="@+id/textViewTranslated"
+        android:layout_width="261dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="28dp"
+        android:textAlignment="viewStart"
+        android:textColor="#82B1FF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonTranslate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonTranslate"
+        android:layout_width="302dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#82B1FF"
+        android:onClick="onClick"
+        android:text="@string/translate_text"
+        app:layout_constraintBottom_toTopOf="@+id/buttonReturn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonReturn2"
+        android:layout_width="302dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="88dp"
+        android:backgroundTint="#FF8A80"
+        android:onClick="onClick"
+        android:text="@string/rtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="271dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTranslated"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerLangSelect"
+        android:layout_width="261dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="110dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginEnd="158dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/select_language"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerLangSelect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
