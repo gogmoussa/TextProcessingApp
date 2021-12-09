@@ -7,4 +7,5 @@
     <string name="take_photo">Take A Photo</string>
     <string name="select_language">Translate To</string>
     <string name="failed_translate">Failed: could not translate text</string>
+    <string name="failed_read">Failed: could not read text</string>
 </resources>
