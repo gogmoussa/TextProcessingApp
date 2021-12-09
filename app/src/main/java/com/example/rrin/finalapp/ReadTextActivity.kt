@@ -69,7 +69,7 @@ class ReadTextActivity : AppCompatActivity() {
                     textView.text = visionText.text
                 }
                 .addOnFailureListener { e ->
-                    textView.text = "Failed: could not read text"
+                    textView.text = getString(R.string.failed_translate)
                 }
         }
 
